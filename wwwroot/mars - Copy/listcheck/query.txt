@@ -1,0 +1,29 @@
+SELECT * FROM ClassListFilter where
+        Phone1=Phone2 And Phone2!='' and Phone1!=''
+        OR Phone1=Phone3 And Phone2!='' and Phone1!=''
+        OR Phone1=Phone4 And Phone2!='' and Phone1!=''
+        OR Phone1=Phone5 And Phone2!='' and Phone1!=''
+        OR Phone1=Phone6 And Phone2!='' and Phone1!=''
+        OR Phone1=Phone7 And Phone2!='' and Phone1!=''
+        
+        OR Phone2=Phone3 And Phone2!='' and Phone1!=''
+        OR Phone2=Phone4 And Phone2!='' and Phone1!=''
+        OR Phone2=Phone5 And Phone2!='' and Phone1!=''
+        OR Phone2=Phone6 And Phone2!='' and Phone1!=''
+        OR Phone2=Phone7 And Phone2!='' and Phone1!=''
+        
+        OR Phone3=Phone4 And Phone2!='' and Phone1!='' and Phone3!=''
+        OR Phone3=Phone5 And Phone2!='' and Phone1!='' and Phone3!=''
+        OR Phone3=Phone6 And Phone2!='' and Phone1!='' and Phone3!=''
+        OR Phone3=Phone7 And Phone2!='' and Phone1!='' and Phone3!=''
+        
+        OR Phone4=Phone5 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!=''
+        OR Phone4=Phone6 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!=''
+        OR Phone4=Phone7 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!=''
+        
+        OR Phone5=Phone6 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!='' And Phone6!=''
+        OR Phone5=Phone7 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!='' And Phone6!=''
+        
+        OR Phone6=Phone7 And Phone2!='' and Phone1!='' and Phone3!='' and Phone4!='' And Phone5!='' And Phone6!='' And Phone7!=''
+        
+        ";
