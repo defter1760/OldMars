@@ -38,25 +38,25 @@
     <div id="header">
         <div id="logo">
         	<a href="/mars/">M.A.R.S.</a>
-            <!--<a href="/mars/"><img src='http://sqlsrv.domain.initiativelegal.com/mars/images/logo7.png'></a>-->
+            <!--<a href="/mars/"><img src='images/logo7.png'></a>-->
         </div>
         <div id="topLinks">
             <?PHP
-				#echo "<a href='http://sqlsrv.domain.initiativelegal.com/mars/reports.php'>Reports</a>";
-				#echo "<a href='http://sqlsrv.domain.initiativelegal.com/mars/graphs.php'>Graphs</a>";
+				#echo "<a href='reports.php'>Reports</a>";
+				#echo "<a href='graphs.php'>Graphs</a>";
 				if (isset($_POST['caseattorney']))
 				{
 					$caseattorney = $_POST['caseattorney'];
 					if (empty($caseattorney)) $caseattorney = '';
-					echo "<a href='http://sqlsrv.domain.initiativelegal.com/mars/caseattorneyview.php?caseattorney=$caseattorney' target='_parent'>Case Attorney View</a>";
+					echo "<a href='caseattorneyview.php?caseattorney=$caseattorney' target='_parent'>Case Attorney View</a>";
 				}
 				if (!isset($_POST['caseattorney']))
 				{
-					echo "<a href='http://sqlsrv.domain.initiativelegal.com/mars/caseattorneyview.php' target='_parent'>Case Attorney View</a>";
+					echo "<a href='caseattorneyview.php' target='_parent'>Case Attorney View</a>";
 				}
 				echo "<a href='http://sqlsrv.domain.initiativelegal.com/mars'>Search</a>";
 				echo '<a href="javascript: void(0)" onclick="popup(';
-					echo "'http://sqlsrv.domain.initiativelegal.com/mars/newProspect.php')";
+					echo "'newProspect.php')";
 					echo '">';
 					echo "Add New Prospect</a>";
 				require("functions.php");//functions
